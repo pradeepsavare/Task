@@ -1,4 +1,4 @@
-import { useUsersQuery } from "./assets/Users";
+import { useUsersQuery } from "./Users";
 
 
 function App() {
@@ -12,10 +12,10 @@ function App() {
       {data.users.map((user) => (
         <div
           key={user.id}
-          className="bg-blue-300 text-white p-4 w-[45%] md:w-[25%] lg:w-[18%]"
+          className="bg-blue-300 text-white text-center p-4 w-[45%] md:w-[25%] lg:w-[18%]"
         >
-          <p>{user.firstName} {user.lastName}</p>
-          <p>Age: {user.age}</p>
+          <p className="text-gray-700 text-lg md:text-xl lg:text-2xl">{user.firstName} {user.lastName}</p>
+          <p className="text-base md:text-lg lg:text-xl">Age: {user.age}</p>
         </div>
       ))}
     </div>
