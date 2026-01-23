@@ -30,10 +30,10 @@ function App() {
     // </div>
     <div className="w-full h-screen bg-amber-300 flex justify-center items-center">
       <div className="w-[40%] h-[60%] bg-amber-100 rounded-lg flex flex-col justify-center items-center shadow-lg shadow-neutral-500 gap-10">
-       <h1 className="text-3xl font-bold">Counter: {count}</h1>
-        <div className="flex flex-row gap-2">
-        <button className="bg-black text-white text-2xl px-5 py-2 rounded-lg cursor-pointer" onClick={() => setCount(count + 1)}>Increment</button>
-        <button className="bg-black text-white text-2xl px-5 py-2 rounded-lg cursor-pointer" onClick={() =>count >0? setCount(count - 1): setCount(0)}>Decrement</button>
+       <h1 className="md:text-3xl font-bold">Counter: {count}</h1>
+        <div className="flex flex-col md:flex-row gap-2">
+        <button className="bg-black text-white md:text-2xl px-5 py-2 rounded-lg cursor-pointer" onClick={() => setCount(count + 1)}>Increment</button>
+        <button className="bg-black text-white md:text-2xl px-5 py-2 rounded-lg cursor-pointer" onClick={() =>count >0? setCount(count - 1): setCount(0)}>Decrement</button>
         </div>
           
       </div>
